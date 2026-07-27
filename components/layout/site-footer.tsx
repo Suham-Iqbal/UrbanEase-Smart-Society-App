@@ -1,12 +1,5 @@
 import Link from "next/link";
-import {
-  AtSign,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Phone,
-  Share2,
-} from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "@/components/brand/logo";
 
 const footerLinks = {
@@ -76,24 +69,6 @@ export function SiteFooter() {
               </ul>
             </div>
           ))}
-        </div>
-      </div>
-      <div className="border-t border-white/10">
-        <div className="site-container flex flex-col gap-5 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} UrbanEase. Demo product website.</p>
-          <div className="flex items-center gap-2">
-            {[Share2, AtSign, MessageCircle].map((Icon, index) => (
-              <span
-                key={index}
-                role="img"
-                aria-label={["UrbanEase on Facebook", "UrbanEase on Instagram", "UrbanEase on LinkedIn"][index]}
-                title="Social profile link coming soon"
-                className="grid size-9 place-items-center rounded-lg border border-white/10 text-slate-500"
-              >
-                <Icon aria-hidden="true" size={16} />
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </footer>
