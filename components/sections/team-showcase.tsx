@@ -83,7 +83,7 @@ export function TeamShowcase({
                       className="mt-5 inline-flex min-h-11 items-center justify-center rounded-xl bg-emerald-600 px-6 text-sm font-extrabold text-white shadow-[0_14px_30px_-14px_rgba(5,150,105,.8)] transition hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-500/20"
                       aria-expanded={isOpen}
                     >
-                      Content
+                      Contact
                     </button>
                     {isOpen && (
                       <div className="mt-5 rounded-2xl border border-emerald-100 bg-emerald-50/70 p-4">

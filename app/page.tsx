@@ -146,11 +146,7 @@ export default function HomePage() {
         <div className="site-container grid items-center gap-14 lg:grid-cols-[.9fr_1.1fr] lg:gap-8">
           <Reveal>
             <div className="max-w-2xl">
-              <p className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-extrabold text-emerald-800">
-                <Sparkles aria-hidden="true" size={14} />
-                Smart living for connected communities
-              </p>
-              <h1 className="mt-7 text-balance text-[2.75rem] font-extrabold leading-[1.02] tracking-[-0.06em] text-slate-950 sm:text-6xl lg:text-[4.55rem]">
+              <h1 className="text-balance text-[2.75rem] font-extrabold leading-[1.02] tracking-[-0.06em] text-slate-950 sm:text-6xl lg:text-[4.55rem]">
                 Smarter societies.
                 <span className="block text-emerald-600">Better communities.</span>
               </h1>
