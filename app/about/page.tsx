@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Sayed Adeen Sarosh",
-    role: "Product & engineering",
-    initials: "SA",
-  },
-  {
     name: "Suham Iqbal Khan",
     role: "Application development",
-    initials: "SI",
+    image: "/images/team/suham-iqbal-khan.jpg",
   },
   {
     name: "Muhammad Saim Ali",
     role: "Platform & experience",
-    initials: "MS",
+    image: "/images/team/muhammad-saim-ali.jpg",
+  },
+  {
+    name: "Syed Adeen Sarosh",
+    role: "Product & engineering",
+    image: "/images/team/syed-adeen-sarosh.png",
   },
 ];
 
@@ -190,12 +190,18 @@ export default function AboutPage() {
           />
           <div className="mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-3">
             {team.map((member) => (
-              <article key={member.name} className="rounded-2xl border border-slate-200 bg-white p-6 text-center">
-                <span className="mx-auto grid size-16 place-items-center rounded-2xl bg-[#0d2b40] text-lg font-extrabold text-emerald-300">
-                  {member.initials}
-                </span>
-                <h2 className="mt-5 font-extrabold text-slate-950">{member.name}</h2>
-                <p className="mt-1 text-sm text-slate-500">{member.role}</p>
+              <article key={member.name} className="overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-[0_18px_50px_-36px_rgba(15,23,42,.45)]">
+                <div className="aspect-[4/5] overflow-hidden bg-slate-100">
+                  <img
+                    src={member.image}
+                    alt={`${member.name}, UrbanEase team member`}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="font-extrabold text-slate-950">{member.name}</h2>
+                  <p className="mt-1 text-sm text-slate-500">{member.role}</p>
+                </div>
               </article>
             ))}
           </div>
