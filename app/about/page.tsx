@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Building2,
   Compass,
-  GraduationCap,
   HeartHandshake,
   Lightbulb,
   MapPin,
@@ -13,6 +12,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SiteCta } from "@/components/sections/site-cta";
+import { TeamShowcase } from "@/components/sections/team-showcase";
 
 export const metadata: Metadata = {
   title: "About UrbanEase",
@@ -20,24 +20,6 @@ export const metadata: Metadata = {
     "Learn why UrbanEase was created, its mission for connected residential communities, and the team building it for Pakistani housing societies.",
   alternates: { canonical: "/about" },
 };
-
-const team = [
-  {
-    name: "Suham Iqbal Khan",
-    role: "Application development",
-    image: "/images/team/suham-iqbal-khan.jpg",
-  },
-  {
-    name: "Muhammad Saim Ali",
-    role: "Platform & experience",
-    image: "/images/team/muhammad-saim-ali.jpg",
-  },
-  {
-    name: "Syed Adeen Sarosh",
-    role: "Product & engineering",
-    image: "/images/team/syed-adeen-sarosh.png",
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -180,43 +162,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-pad bg-slate-50">
-        <div className="site-container">
-          <SectionHeading
-            eyebrow="The project team"
-            title="The people behind UrbanEase."
-            description="A multidisciplinary student team shaping the product, application, platform, and user experience."
-            align="center"
-          />
-          <div className="mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-3">
-            {team.map((member) => (
-              <article key={member.name} className="overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-[0_18px_50px_-36px_rgba(15,23,42,.45)]">
-                <div className="aspect-[4/5] overflow-hidden bg-slate-100">
-                  <img
-                    src={member.image}
-                    alt={`${member.name}, UrbanEase team member`}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h2 className="font-extrabold text-slate-950">{member.name}</h2>
-                  <p className="mt-1 text-sm text-slate-500">{member.role}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-          <div className="mx-auto mt-6 flex max-w-2xl flex-col items-center gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-center sm:flex-row sm:text-left">
-            <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-emerald-600 text-white">
-              <GraduationCap aria-hidden="true" size={23} />
-            </span>
-            <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-emerald-700">Project supervisor</p>
-              <p className="mt-1 text-lg font-extrabold text-slate-950">Mr. Fahim Shahzad</p>
-              <p className="mt-1 text-sm text-slate-600">With appreciation for project guidance and supervision.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TeamShowcase
+        eyebrow="The project team"
+        description="A multidisciplinary student team shaping the product, application, platform, and user experience."
+      />
 
       <SiteCta />
     </>

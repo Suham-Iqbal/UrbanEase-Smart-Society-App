@@ -24,6 +24,7 @@ import { HeroProductVisual } from "@/components/sections/hero-product-visual";
 import { MobileShowcase } from "@/components/sections/mobile-showcase";
 import { RoleTabs } from "@/components/sections/role-tabs";
 import { SiteCta } from "@/components/sections/site-cta";
+import { TeamShowcase } from "@/components/sections/team-showcase";
 import { features } from "@/lib/site-data";
 
 export const metadata: Metadata = {
@@ -92,27 +93,6 @@ const audiences = [
   ["Smart residential projects", Sparkles],
   ["University campuses", MapPinned],
   ["Mixed-use communities", Landmark],
-] as const;
-
-const teamMembers = [
-  {
-    name: "Suham Iqbal Khan",
-    role: "UrbanEase project team",
-    image: "/images/team/suham-iqbal-khan.jpg",
-    position: "left",
-  },
-  {
-    name: "Muhammad Saim Ali",
-    role: "UrbanEase project team",
-    image: "/images/team/muhammad-saim-ali.jpg",
-    position: "center",
-  },
-  {
-    name: "Syed Adeen Sarosh",
-    role: "UrbanEase project team",
-    image: "/images/team/syed-adeen-sarosh.png",
-    position: "right",
-  },
 ] as const;
 
 export default function HomePage() {
@@ -348,55 +328,7 @@ export default function HomePage() {
         <MobileShowcase />
       </div>
 
-      <section className="section-pad bg-white">
-        <div className="site-container">
-          <SectionHeading
-            eyebrow="Collaboration"
-            title="Meet our team"
-            description="UrbanEase was shaped by a small team working together across product thinking, interface detail, and implementation."
-            align="center"
-          />
-          <div className="mt-12 grid gap-5 lg:grid-cols-3 lg:items-center">
-            {teamMembers.map((member, index) => (
-              <Reveal key={member.name} delay={index * 0.06}>
-                <article
-                  className={`group h-full overflow-hidden rounded-[1.75rem] border bg-white shadow-[0_24px_70px_-45px_rgba(15,23,42,.45)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-42px_rgba(15,23,42,.55)] ${
-                    member.position === "center"
-                      ? "border-emerald-200 lg:-translate-y-5 lg:hover:-translate-y-6"
-                      : "border-slate-200"
-                  }`}
-                >
-                  <div className="relative aspect-[4/5] overflow-hidden bg-slate-100">
-                    <img
-                      src={member.image}
-                      alt={`${member.name}, UrbanEase team member`}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.035]"
-                    />
-                    <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/65 to-transparent" />
-                    {member.position === "center" && (
-                      <span className="absolute left-4 top-4 rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-extrabold text-white shadow-lg shadow-emerald-950/20">
-                        Core team
-                      </span>
-                    )}
-                  </div>
-                  <div className="p-6">
-                    <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-emerald-700">
-                      {member.role}
-                    </p>
-                    <h3 className="mt-2 text-xl font-extrabold tracking-[-0.025em] text-slate-950">
-                      {member.name}
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
-                      Part of the three-member team behind the UrbanEase
-                      website and product presentation.
-                    </p>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TeamShowcase />
 
       <section className="section-pad overflow-hidden">
         <div className="site-container">
