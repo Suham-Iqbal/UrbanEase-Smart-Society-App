@@ -100,7 +100,7 @@ export default function HomePage() {
     "@type": "Organization",
     name: "UrbanEase",
     url: "https://myurbanease.com",
-    email: "ssivasolutions2@gmail.com",
+    email: "sasifysolutions2@gmail.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Islamabad",

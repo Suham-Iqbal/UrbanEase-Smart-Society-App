@@ -51,7 +51,7 @@ export default function ContactPage() {
             </p>
             <div className="mt-8 space-y-3">
               {[
-                [Mail, "Email", "ssivasolutions2@gmail.com"],
+                [Mail, "Email", "sasifysolutions2@gmail.com"],
                 [Phone, "Phone", "+92 311 6185711"],
                 [MapPin, "Location", "Islamabad, Pakistan"],
                 [Clock3, "Response", "Typically within 1–2 working days"],

@@ -41,11 +41,11 @@ export function SiteFooter() {
           </p>
           <div className="mt-7 space-y-3 text-sm">
             <a
-              href="mailto:ssivasolutions2@gmail.com"
+              href="mailto:sasifysolutions2@gmail.com"
               className="flex items-center gap-3 transition hover:text-white"
             >
               <Mail aria-hidden="true" size={17} className="text-emerald-400" />
-              ssivasolutions2@gmail.com
+              sasifysolutions2@gmail.com
             </a>
             <p className="flex items-center gap-3">
               <MapPin aria-hidden="true" size={17} className="text-emerald-400" />

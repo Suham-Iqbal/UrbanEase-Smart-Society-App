@@ -68,7 +68,7 @@ export default function PrivacyPage() {
       <h2>7. Contact</h2>
       <p>
         Questions about privacy or data handling can be directed to{" "}
-        <a href="mailto:ssivasolutions2@gmail.com">ssivasolutions2@gmail.com</a>.
+        <a href="mailto:sasifysolutions2@gmail.com">sasifysolutions2@gmail.com</a>.
       </p>
     </LegalPage>
   );
