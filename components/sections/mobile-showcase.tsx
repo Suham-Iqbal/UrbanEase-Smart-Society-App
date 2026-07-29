@@ -14,7 +14,7 @@ const screens: PhoneScreen[] = [
   "Bills",
   "Notices",
   "Emergency",
-  "Community",
+  "Lost & Found",
   "Community Chat",
   "Map",
 ];

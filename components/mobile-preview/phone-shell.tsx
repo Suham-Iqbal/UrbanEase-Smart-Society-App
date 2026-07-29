@@ -6,7 +6,7 @@ export type PhoneScreen =
   | "Bills"
   | "Notices"
   | "Emergency"
-  | "Community"
+  | "Lost & Found"
   | "Community Chat"
   | "Map";
 
@@ -31,7 +31,7 @@ const screenImages: Record<PhoneScreen, { src: string; alt: string }> = {
     src: "/images/app-screens/emergency.jpg",
     alt: "UrbanEase emergency SOS screen",
   },
-  Community: {
+  "Lost & Found": {
     src: "/images/app-screens/community.jpg",
     alt: "UrbanEase lost and found community screen",
   },

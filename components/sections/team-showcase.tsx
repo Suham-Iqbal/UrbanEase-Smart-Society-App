@@ -29,7 +29,8 @@ const teamMembers = [
     name: "Syed Adeen Sarosh",
     role: "Project Manager and Digital Marketing",
     image: "/images/team/syed-adeen-sarosh.png",
-    linkedin: "https://www.linkedin.com/in/syedsarosh22",
+    linkedin:
+      "https://www.linkedin.com/in/syedsarosh2?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     email: "syedsarosh.dev@gmail.com",
     phone: "03450485711",
   },
